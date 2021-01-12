@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mxmessagedefinition" namespace="/path/mxmessagedefinition" extends="path-default">
+
+		<action name="MxMessageDefinitionMaintAction_*" class="mxMessageDefinitionMaintAction" method="{1}">
+			<result name="mxMessageDefinitionMaint">/WEB-INF/pages/payh/mxmessagedefinition/MxMessageDefinitionMaint.jsp</result>
+			<result name="mxMessageDefinitionList">/WEB-INF/pages/payh/mxmessagedefinition/MxMessageDefinitionList.jsp</result>
+			<result name="childRowGrid">/WEB-INF/pages/payh/mxmessagedefinition/childGrid.jsp</result>
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+			
+			<interceptor-ref name="fileUpload"></interceptor-ref>
+			<interceptor-ref name="pathDefaultStack" />
+			
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+			<result name="successUpload" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputName">scriptStream</param>
+			</result>
+			
+		</action>
+
+		<action name="MxMessageDefinitionListAction_*" class="mxMessageDefinitionListAction" method="{1}">
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		
+		<action name="MxMessageDefinitionStatusAction_*" class="mxMessageDefinitionStatusAction" method="{1}">
+			<result name="success" type="json"> 
+				<param name="ignoreHierarchy">false</param> 
+			</result>
+		</action>
+
+	</package>
+</struts>

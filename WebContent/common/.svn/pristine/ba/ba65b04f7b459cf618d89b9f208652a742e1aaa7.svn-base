@@ -1,0 +1,52 @@
+.add-new-item {
+	min-height: 45px;
+}
+.inline {
+	display:inline-block
+}
+
+.fit-content-height {
+	height:fit-content
+}
+
+.full-height {
+	height:100%
+}
+
+.new_item_layout {
+	height:100%; 
+	width:100%; 
+	min-width:260px; 
+	overflow: auto;	
+}
+
+.items_cell { 
+     margin: 2px; 
+     padding: 2px; 
+     cursor: pointer; 
+     border-radius: 3px; 
+     min-height: 33px;  
+ } 
+
+.collapsible {
+  overflow: hidden;
+  background-color: #f2f5f7;
+  color: white;
+}
+
+.collapsible_header {
+  overflow: hidden;
+  background-color: #f2f5f7; 
+  color: black;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f2f5f7;
+}
+
+.hidden_column {
+   width: 20px  
+ } 
+

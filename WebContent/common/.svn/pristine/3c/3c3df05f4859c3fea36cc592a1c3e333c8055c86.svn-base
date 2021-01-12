@@ -1,0 +1,23 @@
+.items {
+    float: left;
+	min-height: 45px;
+	min-width: 260px;
+}
+
+.title_items {
+    list-style-type: none;
+    float: left;
+	width:260px;
+	height: 35px;
+}
+
+.items_hidden {
+    float: left;
+	min-height: 45px;
+	min-width: 20px;
+}
+
+.title_item .minmax { 
+  float:right ;
+  color: white 
+}
